@@ -1,11 +1,16 @@
 package main
 
+import (
+	//v2 "math/rand/v2"
+	"math/rand"
+)
+
 type interger = int // creating an alias
 //type rune = int32
 
 func main() {
-	var day uint8 = 4
-	switch day {
+	//var day uint8 = 4
+	switch day := rand.Intn(8); day {
 	case 1:
 		println("Sunday")
 	case 2:
