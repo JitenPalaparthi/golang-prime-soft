@@ -1,0 +1,288 @@
+# command-line-arguments
+main.main STEXT size=352 args=0x0 locals=0x38 funcid=0x0 align=0x0
+        0x0000 00000 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)TEXT     main.main(SB), ABIInternal, $64-0
+        0x0000 00000 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)MOVD     16(g), R16
+        0x0004 00004 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)PCDATA   $0, $-2
+        0x0004 00004 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)CMP      R16, RSP
+        0x0008 00008 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)BLS      340
+        0x000c 00012 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)PCDATA   $0, $-1
+        0x000c 00012 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)MOVD.W   R30, -64(RSP)
+        0x0010 00016 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)MOVD     R29, -8(RSP)
+        0x0014 00020 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)SUB      $8, RSP, R29
+        0x0018 00024 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)FUNCDATA $0, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+        0x0018 00024 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)FUNCDATA $1, gclocals·CnDyI2HjYXFz19SsOj98tw==(SB)
+        0x0018 00024 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:16)PCDATA  $1, $0
+        0x0018 00024 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:16)CALL    runtime.printlock(SB)
+        0x001c 00028 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:16)MOVD    $go:string."Wednesday\n"(SB), R0
+        0x0024 00036 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:16)MOVD    $10, R1
+        0x0028 00040 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:16)CALL    runtime.printstring(SB)
+        0x002c 00044 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:16)CALL    runtime.printunlock(SB)
+        0x0030 00048 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:46)CALL    runtime.printlock(SB)
+        0x0034 00052 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:46)MOVD    $-100, R0
+        0x0038 00056 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:46)CALL    runtime.printint(SB)
+        0x003c 00060 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:46)MOVD    $go:string."  is less than 0\n"(SB), R0
+        0x0044 00068 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:46)MOVD    $17, R1
+        0x0048 00072 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:46)CALL    runtime.printstring(SB)
+        0x004c 00076 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:46)CALL    runtime.printunlock(SB)
+        0x0050 00080 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)MOVD    $main..autotmp_8-20(SP), R0
+        0x0054 00084 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)MOVD    $65, R1
+        0x0058 00088 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)CALL    runtime.intstring(SB)
+        0x005c 00092 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)MOVD    R0, main..autotmp_11-8(SP)
+        0x0060 00096 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)MOVD    R1, main..autotmp_12-16(SP)
+        0x0064 00100 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)PCDATA  $1, $1
+        0x0064 00100 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)CALL    runtime.printlock(SB)
+        0x0068 00104 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)MOVD    main..autotmp_11-8(SP), R0
+        0x006c 00108 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)MOVD    main..autotmp_12-16(SP), R1
+        0x0070 00112 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)PCDATA  $1, $0
+        0x0070 00112 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)CALL    runtime.printstring(SB)
+        0x0074 00116 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)MOVD    $go:string."  is vovel\n"(SB), R0
+        0x007c 00124 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)MOVD    $11, R1
+        0x0080 00128 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)CALL    runtime.printstring(SB)
+        0x0084 00132 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:54)CALL    runtime.printunlock(SB)
+        0x0088 00136 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:63)CALL    runtime.printlock(SB)
+        0x008c 00140 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:63)MOVD    $48, R0
+        0x0090 00144 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:63)CALL    runtime.printint(SB)
+        0x0094 00148 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:63)MOVD    $go:string." is divisible by 8\n"(SB), R0
+        0x009c 00156 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:63)MOVD    $19, R1
+        0x00a0 00160 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:63)CALL    runtime.printstring(SB)
+        0x00a4 00164 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:63)CALL    runtime.printunlock(SB)
+        0x00a8 00168 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:66)CALL    runtime.printlock(SB)
+        0x00ac 00172 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:66)MOVD    $48, R0
+        0x00b0 00176 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:66)CALL    runtime.printint(SB)
+        0x00b4 00180 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:66)MOVD    $go:string." is divisible by 4\n"(SB), R0
+        0x00bc 00188 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:66)MOVD    $19, R1
+        0x00c0 00192 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:66)CALL    runtime.printstring(SB)
+        0x00c4 00196 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:66)CALL    runtime.printunlock(SB)
+        0x00c8 00200 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:69)CALL    runtime.printlock(SB)
+        0x00cc 00204 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:69)MOVD    $48, R0
+        0x00d0 00208 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:69)CALL    runtime.printint(SB)
+        0x00d4 00212 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:69)MOVD    $go:string." is divisible by 2\n"(SB), R0
+        0x00dc 00220 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:69)MOVD    $19, R1
+        0x00e0 00224 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:69)CALL    runtime.printstring(SB)
+        0x00e4 00228 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:69)CALL    runtime.printunlock(SB)
+        0x00e8 00232 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:78)CALL    runtime.printlock(SB)
+        0x00ec 00236 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:78)MOVD    $6, R0
+        0x00f0 00240 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:78)CALL    runtime.printint(SB)
+        0x00f4 00244 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:78)MOVD    $go:string." is divisible by 2\n"(SB), R0
+        0x00fc 00252 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:78)MOVD    $19, R1
+        0x0100 00256 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:78)CALL    runtime.printstring(SB)
+        0x0104 00260 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:78)CALL    runtime.printunlock(SB)
+        0x0108 00264 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:81)CALL    runtime.printlock(SB)
+        0x010c 00268 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:81)MOVD    $6, R0
+        0x0110 00272 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:81)CALL    runtime.printint(SB)
+        0x0114 00276 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:81)MOVD    $go:string." is divisible by 4\n"(SB), R0
+        0x011c 00284 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:81)MOVD    $19, R1
+        0x0120 00288 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:81)CALL    runtime.printstring(SB)
+        0x0124 00292 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:81)CALL    runtime.printunlock(SB)
+        0x0128 00296 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:84)CALL    runtime.printlock(SB)
+        0x012c 00300 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:84)MOVD    $6, R0
+        0x0130 00304 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:84)CALL    runtime.printint(SB)
+        0x0134 00308 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:84)MOVD    $go:string." is divisible by 8\n"(SB), R0
+        0x013c 00316 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:84)MOVD    $19, R1
+        0x0140 00320 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:84)CALL    runtime.printstring(SB)
+        0x0144 00324 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:84)CALL    runtime.printunlock(SB)
+        0x0148 00328 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:93)LDP     -8(RSP), (R29, R30)
+        0x014c 00332 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:93)ADD     $64, RSP
+        0x0150 00336 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:93)RET     (R30)
+        0x0154 00340 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:93)NOP
+        0x0154 00340 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)PCDATA   $1, $-1
+        0x0154 00340 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)PCDATA   $0, $-2
+        0x0154 00340 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)MOVD     R30, R3
+        0x0158 00344 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)CALL     runtime.morestack_noctxt(SB)
+        0x015c 00348 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)PCDATA   $0, $-1
+        0x015c 00348 (/Users/jiten/workspace/training/golang-prime-soft/6-switch-case/main.go:6)JMP      0
+        0x0000 90 0b 40 f9 ff 63 30 eb 69 0a 00 54 fe 0f 1c f8  ..@..c0.i..T....
+        0x0010 fd 83 1f f8 fd 23 00 d1 00 00 00 94 00 00 00 90  .....#..........
+        0x0020 00 00 00 91 41 01 80 d2 00 00 00 94 00 00 00 94  ....A...........
+        0x0030 00 00 00 94 60 0c 80 92 00 00 00 94 00 00 00 90  ....`...........
+        0x0040 00 00 00 91 21 02 80 d2 00 00 00 94 00 00 00 94  ....!...........
+        0x0050 e0 93 00 91 21 08 80 d2 00 00 00 94 e0 1b 00 f9  ....!...........
+        0x0060 e1 17 00 f9 00 00 00 94 e0 1b 40 f9 e1 17 40 f9  ..........@...@.
+        0x0070 00 00 00 94 00 00 00 90 00 00 00 91 61 01 80 d2  ............a...
+        0x0080 00 00 00 94 00 00 00 94 00 00 00 94 e0 07 7c b2  ..............|.
+        0x0090 00 00 00 94 00 00 00 90 00 00 00 91 61 02 80 d2  ............a...
+        0x00a0 00 00 00 94 00 00 00 94 00 00 00 94 e0 07 7c b2  ..............|.
+        0x00b0 00 00 00 94 00 00 00 90 00 00 00 91 61 02 80 d2  ............a...
+        0x00c0 00 00 00 94 00 00 00 94 00 00 00 94 e0 07 7c b2  ..............|.
+        0x00d0 00 00 00 94 00 00 00 90 00 00 00 91 61 02 80 d2  ............a...
+        0x00e0 00 00 00 94 00 00 00 94 00 00 00 94 e0 07 7f b2  ................
+        0x00f0 00 00 00 94 00 00 00 90 00 00 00 91 61 02 80 d2  ............a...
+        0x0100 00 00 00 94 00 00 00 94 00 00 00 94 e0 07 7f b2  ................
+        0x0110 00 00 00 94 00 00 00 90 00 00 00 91 61 02 80 d2  ............a...
+        0x0120 00 00 00 94 00 00 00 94 00 00 00 94 e0 07 7f b2  ................
+        0x0130 00 00 00 94 00 00 00 90 00 00 00 91 61 02 80 d2  ............a...
+        0x0140 00 00 00 94 00 00 00 94 fd fb 7f a9 ff 03 01 91  ................
+        0x0150 c0 03 5f d6 e3 03 1e aa 00 00 00 94 a9 ff ff 17  .._.............
+        rel 24+4 t=R_CALLARM64 runtime.printlock+0
+        rel 28+8 t=R_ADDRARM64 go:string."Wednesday\n"+0
+        rel 40+4 t=R_CALLARM64 runtime.printstring+0
+        rel 44+4 t=R_CALLARM64 runtime.printunlock+0
+        rel 48+4 t=R_CALLARM64 runtime.printlock+0
+        rel 56+4 t=R_CALLARM64 runtime.printint+0
+        rel 60+8 t=R_ADDRARM64 go:string."  is less than 0\n"+0
+        rel 72+4 t=R_CALLARM64 runtime.printstring+0
+        rel 76+4 t=R_CALLARM64 runtime.printunlock+0
+        rel 88+4 t=R_CALLARM64 runtime.intstring+0
+        rel 100+4 t=R_CALLARM64 runtime.printlock+0
+        rel 112+4 t=R_CALLARM64 runtime.printstring+0
+        rel 116+8 t=R_ADDRARM64 go:string."  is vovel\n"+0
+        rel 128+4 t=R_CALLARM64 runtime.printstring+0
+        rel 132+4 t=R_CALLARM64 runtime.printunlock+0
+        rel 136+4 t=R_CALLARM64 runtime.printlock+0
+        rel 144+4 t=R_CALLARM64 runtime.printint+0
+        rel 148+8 t=R_ADDRARM64 go:string." is divisible by 8\n"+0
+        rel 160+4 t=R_CALLARM64 runtime.printstring+0
+        rel 164+4 t=R_CALLARM64 runtime.printunlock+0
+        rel 168+4 t=R_CALLARM64 runtime.printlock+0
+        rel 176+4 t=R_CALLARM64 runtime.printint+0
+        rel 180+8 t=R_ADDRARM64 go:string." is divisible by 4\n"+0
+        rel 192+4 t=R_CALLARM64 runtime.printstring+0
+        rel 196+4 t=R_CALLARM64 runtime.printunlock+0
+        rel 200+4 t=R_CALLARM64 runtime.printlock+0
+        rel 208+4 t=R_CALLARM64 runtime.printint+0
+        rel 212+8 t=R_ADDRARM64 go:string." is divisible by 2\n"+0
+        rel 224+4 t=R_CALLARM64 runtime.printstring+0
+        rel 228+4 t=R_CALLARM64 runtime.printunlock+0
+        rel 232+4 t=R_CALLARM64 runtime.printlock+0
+        rel 240+4 t=R_CALLARM64 runtime.printint+0
+        rel 244+8 t=R_ADDRARM64 go:string." is divisible by 2\n"+0
+        rel 256+4 t=R_CALLARM64 runtime.printstring+0
+        rel 260+4 t=R_CALLARM64 runtime.printunlock+0
+        rel 264+4 t=R_CALLARM64 runtime.printlock+0
+        rel 272+4 t=R_CALLARM64 runtime.printint+0
+        rel 276+8 t=R_ADDRARM64 go:string." is divisible by 4\n"+0
+        rel 288+4 t=R_CALLARM64 runtime.printstring+0
+        rel 292+4 t=R_CALLARM64 runtime.printunlock+0
+        rel 296+4 t=R_CALLARM64 runtime.printlock+0
+        rel 304+4 t=R_CALLARM64 runtime.printint+0
+        rel 308+8 t=R_ADDRARM64 go:string." is divisible by 8\n"+0
+        rel 320+4 t=R_CALLARM64 runtime.printstring+0
+        rel 324+4 t=R_CALLARM64 runtime.printunlock+0
+        rel 344+4 t=R_CALLARM64 runtime.morestack_noctxt+0
+go:cuinfo.producer.main SDWARFCUINFO dupok size=0
+        0x0000 72 65 67 61 62 69                                regabi
+go:cuinfo.packagename.main SDWARFCUINFO dupok size=0
+        0x0000 6d 61 69 6e                                      main
+main..inittask SNOPTRDATA size=8
+        0x0000 00 00 00 00 00 00 00 00                          ........
+go:string."Sunday" SRODATA dupok size=6
+        0x0000 53 75 6e 64 61 79                                Sunday
+go:string."Sunday\n" SRODATA dupok size=7
+        0x0000 53 75 6e 64 61 79 0a                             Sunday.
+go:string."Monday" SRODATA dupok size=6
+        0x0000 4d 6f 6e 64 61 79                                Monday
+go:string."Monday\n" SRODATA dupok size=7
+        0x0000 4d 6f 6e 64 61 79 0a                             Monday.
+go:string."Tuesday" SRODATA dupok size=7
+        0x0000 54 75 65 73 64 61 79                             Tuesday
+go:string."Tuesday\n" SRODATA dupok size=8
+        0x0000 54 75 65 73 64 61 79 0a                          Tuesday.
+go:string."Wednesday" SRODATA dupok size=9
+        0x0000 57 65 64 6e 65 73 64 61 79                       Wednesday
+go:string."Wednesday\n" SRODATA dupok size=10
+        0x0000 57 65 64 6e 65 73 64 61 79 0a                    Wednesday.
+go:string."Thursday" SRODATA dupok size=8
+        0x0000 54 68 75 72 73 64 61 79                          Thursday
+go:string."Thursday\n" SRODATA dupok size=9
+        0x0000 54 68 75 72 73 64 61 79 0a                       Thursday.
+go:string."Friday" SRODATA dupok size=6
+        0x0000 46 72 69 64 61 79                                Friday
+go:string."Friday\n" SRODATA dupok size=7
+        0x0000 46 72 69 64 61 79 0a                             Friday.
+go:string."Saturday" SRODATA dupok size=8
+        0x0000 53 61 74 75 72 64 61 79                          Saturday
+go:string."Saturday\n" SRODATA dupok size=9
+        0x0000 53 61 74 75 72 64 61 79 0a                       Saturday.
+go:string."noday" SRODATA dupok size=5
+        0x0000 6e 6f 64 61 79                                   noday
+go:string."noday\n" SRODATA dupok size=6
+        0x0000 6e 6f 64 61 79 0a                                noday.
+go:string." is between 0 and 50" SRODATA dupok size=20
+        0x0000 20 69 73 20 62 65 74 77 65 65 6e 20 30 20 61 6e   is between 0 an
+        0x0010 64 20 35 30                                      d 50
+go:string."  is between 0 and 50\n" SRODATA dupok size=22
+        0x0000 20 20 69 73 20 62 65 74 77 65 65 6e 20 30 20 61    is between 0 a
+        0x0010 6e 64 20 35 30 0a                                nd 50.
+go:string." is between 50 and 100" SRODATA dupok size=22
+        0x0000 20 69 73 20 62 65 74 77 65 65 6e 20 35 30 20 61   is between 50 a
+        0x0010 6e 64 20 31 30 30                                nd 100
+go:string."  is between 50 and 100\n" SRODATA dupok size=24
+        0x0000 20 20 69 73 20 62 65 74 77 65 65 6e 20 35 30 20    is between 50 
+        0x0010 61 6e 64 20 31 30 30 0a                          and 100.
+go:string." is greater than 100" SRODATA dupok size=20
+        0x0000 20 69 73 20 67 72 65 61 74 65 72 20 74 68 61 6e   is greater than
+        0x0010 20 31 30 30                                       100
+go:string."  is greater than 100\n" SRODATA dupok size=22
+        0x0000 20 20 69 73 20 67 72 65 61 74 65 72 20 74 68 61    is greater tha
+        0x0010 6e 20 31 30 30 0a                                n 100.
+go:string." is less than 0" SRODATA dupok size=15
+        0x0000 20 69 73 20 6c 65 73 73 20 74 68 61 6e 20 30      is less than 0
+go:string."  is less than 0\n" SRODATA dupok size=17
+        0x0000 20 20 69 73 20 6c 65 73 73 20 74 68 61 6e 20 30    is less than 0
+        0x0010 0a                                               .
+go:string." is vovel" SRODATA dupok size=9
+        0x0000 20 69 73 20 76 6f 76 65 6c                        is vovel
+go:string."  is vovel\n" SRODATA dupok size=11
+        0x0000 20 20 69 73 20 76 6f 76 65 6c 0a                   is vovel.
+go:string."is either a consonent or a special character" SRODATA dupok size=44
+        0x0000 69 73 20 65 69 74 68 65 72 20 61 20 63 6f 6e 73  is either a cons
+        0x0010 6f 6e 65 6e 74 20 6f 72 20 61 20 73 70 65 63 69  onent or a speci
+        0x0020 61 6c 20 63 68 61 72 61 63 74 65 72              al character
+go:string." is either a consonent or a special character\n" SRODATA dupok size=46
+        0x0000 20 69 73 20 65 69 74 68 65 72 20 61 20 63 6f 6e   is either a con
+        0x0010 73 6f 6e 65 6e 74 20 6f 72 20 61 20 73 70 65 63  sonent or a spec
+        0x0020 69 61 6c 20 63 68 61 72 61 63 74 65 72 0a        ial character.
+go:string."is divisible by 8" SRODATA dupok size=17
+        0x0000 69 73 20 64 69 76 69 73 69 62 6c 65 20 62 79 20  is divisible by 
+        0x0010 38                                               8
+go:string." is divisible by 8\n" SRODATA dupok size=19
+        0x0000 20 69 73 20 64 69 76 69 73 69 62 6c 65 20 62 79   is divisible by
+        0x0010 20 38 0a                                          8.
+go:string."is divisible by 4" SRODATA dupok size=17
+        0x0000 69 73 20 64 69 76 69 73 69 62 6c 65 20 62 79 20  is divisible by 
+        0x0010 34                                               4
+go:string." is divisible by 4\n" SRODATA dupok size=19
+        0x0000 20 69 73 20 64 69 76 69 73 69 62 6c 65 20 62 79   is divisible by
+        0x0010 20 34 0a                                          4.
+go:string."is divisible by 2" SRODATA dupok size=17
+        0x0000 69 73 20 64 69 76 69 73 69 62 6c 65 20 62 79 20  is divisible by 
+        0x0010 32                                               2
+go:string." is divisible by 2\n" SRODATA dupok size=19
+        0x0000 20 69 73 20 64 69 76 69 73 69 62 6c 65 20 62 79   is divisible by
+        0x0010 20 32 0a                                          2.
+runtime.memequal32·f SRODATA dupok size=8
+        0x0000 00 00 00 00 00 00 00 00                          ........
+        rel 0+8 t=R_ADDR runtime.memequal32+0
+runtime.memequal64·f SRODATA dupok size=8
+        0x0000 00 00 00 00 00 00 00 00                          ........
+        rel 0+8 t=R_ADDR runtime.memequal64+0
+runtime.gcbits.0100000000000000 SRODATA dupok size=8
+        0x0000 01 00 00 00 00 00 00 00                          ........
+type:.namedata.*[4]uint8- SRODATA dupok size=11
+        0x0000 00 09 2a 5b 34 5d 75 69 6e 74 38                 ..*[4]uint8
+type:*[4]uint8 SRODATA dupok size=56
+        0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+        0x0010 c4 80 4b 75 08 08 08 36 00 00 00 00 00 00 00 00  ..Ku...6........
+        0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0030 00 00 00 00 00 00 00 00                          ........
+        rel 24+8 t=R_ADDR runtime.memequal64·f+0
+        rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+        rel 40+4 t=R_ADDROFF type:.namedata.*[4]uint8-+0
+        rel 48+8 t=R_ADDR type:[4]uint8+0
+runtime.gcbits. SRODATA dupok size=0
+type:[4]uint8 SRODATA dupok size=72
+        0x0000 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0010 14 65 25 51 0a 01 01 11 00 00 00 00 00 00 00 00  .e%Q............
+        0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0040 04 00 00 00 00 00 00 00                          ........
+        rel 24+8 t=R_ADDR runtime.memequal32·f+0
+        rel 32+8 t=R_ADDR runtime.gcbits.+0
+        rel 40+4 t=R_ADDROFF type:.namedata.*[4]uint8-+0
+        rel 44+4 t=RelocType(-32763) type:*[4]uint8+0
+        rel 48+8 t=R_ADDR type:uint8+0
+        rel 56+8 t=R_ADDR type:[]uint8+0
+gclocals·J5F+7Qw7O7ve2QcWC7DpeQ== SRODATA dupok size=8
+        0x0000 02 00 00 00 00 00 00 00                          ........
+gclocals·CnDyI2HjYXFz19SsOj98tw== SRODATA dupok size=10
+        0x0000 02 00 00 00 01 00 00 00 00 01                    ..........
