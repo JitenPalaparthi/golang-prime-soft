@@ -30,7 +30,11 @@ GOOS=android GOARCH=arm64 go build -o build/demo-android-arm64 -ldflags="-w -s" 
 
 ## Keywords
 
-case, default, if, else, fallthrough, func, import, package,switch,var (10 out of 25)
+break,case, const,continue,default, if, else, fallthrough, for,func,goto, import, package,range,return,switch,var (17 out of 25)
+
+## builtin
+
+append,cap,clear,complex,copy, len,imag, make, max,min,print,println,real (13 out of 18)
 
 ## packages
 

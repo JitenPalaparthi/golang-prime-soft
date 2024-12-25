@@ -20,6 +20,14 @@ func main() {
 	slice6 := append(slice1[:2], slice1[3:]...)
 	fmt.Println(slice6)
 
+	// make, append , cap, len, copy, clear
+
+	slice7 := make([]int, 20)
+	//var slice7 []int
+	copy(slice7, slice1[:5]) // deep copy
+	fmt.Println(slice7)
+	clear(slice7)
+	fmt.Println(slice7)
 }
 
 func PrintSliceHeader(slice []int, name string) {
