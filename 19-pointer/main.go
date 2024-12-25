@@ -19,6 +19,15 @@ func main() {
 	fmt.Println("slice1->", slice1)
 	fmt.Println("slice2->", slice2)
 
+	slice3 := []int{1, 2, 3}
+	slice4 := []int{1, 2, 3}
+
+	sq(slice3)
+	sqR(&slice4)
+
+	fmt.Println("slice3->", slice3)
+	fmt.Println("slice4->", slice4)
+
 }
 
 func incr(n int) {
