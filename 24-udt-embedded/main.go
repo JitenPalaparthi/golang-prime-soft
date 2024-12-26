@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -40,6 +42,7 @@ func main() {
 	},
 	}
 	fmt.Println(p2)
+
 }
 
 type Person struct {
