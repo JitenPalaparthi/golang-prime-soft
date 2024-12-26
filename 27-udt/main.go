@@ -52,7 +52,6 @@ func main() {
 	var m3 myint3
 	fmt.Println(m3)
 	// call ToString, Sq and Cube methods on m3
-
 }
 
 // something about format using Sprint
