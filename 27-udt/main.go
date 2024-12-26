@@ -23,6 +23,8 @@ func (m myint2) Cube() myint2 {
 	return m * m * m
 }
 
+type myint3 myint2
+
 func main() {
 	var m1 myint1 = 12312
 	str1 := m1.ToString()
@@ -44,8 +46,12 @@ func main() {
 	fmt.Println(str3, sq3, cb3)
 
 	var m2 myint2
+	fmt.Println(m2)
 
 	// call ToString, Sq and Cube methods on m2
+	var m3 myint3
+	fmt.Println(m3)
+	// call ToString, Sq and Cube methods on m3
 
 }
 
