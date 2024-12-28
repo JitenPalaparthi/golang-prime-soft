@@ -22,3 +22,12 @@ func (u *UserDB) Create(user *models.User) (*models.User, error) {
 	}
 	return user, nil
 }
+
+func (u *UserDB) GetByID(id string) (*models.User, error) {
+	user := new(models.User)
+	tx := u.DB.First(user, id)
+	if tx.Error != nil {
+		return nil, tx.Error
+	}
+	return user, nil
+}

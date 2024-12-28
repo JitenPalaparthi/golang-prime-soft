@@ -6,6 +6,7 @@ import (
 	"http-echo-demo/models"
 	"log"
 	"net/http"
+	"strings"
 	"time"
 
 	"github.com/labstack/echo/v4"
@@ -39,4 +40,23 @@ func (u *Userhandler) Create(c echo.Context) error {
 		return err
 	}
 	return c.JSON(http.StatusCreated, user)
+}
+
+func (u *Userhandler) GetByID(c echo.Context) error {
+	id := c.Param("id")
+	if id == "" {
+		return echo.NewHTTPError(http.StatusBadRequest, "invalid id")
+	}
+
+	user, err := u.IUser.GetByID(id)
+	println("------>", err.Error())
+	if err != nil {
+		log.Println(err.Error())
+		if strings.Contains(err.Error(), "record not found") {
+			return echo.NewHTTPError(http.StatusNoContent, "record not found")
+		} else {
+			return echo.NewHTTPError(http.StatusBadRequest, "something went wrong")
+		}
+	}
+	return c.JSON(http.StatusOK, user)
 }

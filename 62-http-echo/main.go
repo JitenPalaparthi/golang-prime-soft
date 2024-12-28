@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"http-echo-demo/db"
-	"http-echo-demo/filedb"
 	"http-echo-demo/handlers"
 	"log"
 	"os"
@@ -51,10 +50,11 @@ func main() {
 	e.GET("/ping", handlers.Ping)
 	e.GET("/health", handlers.Health)
 
-	//userHandler := handlers.NewUser(db.NewUserDB(dbConn))
-	userHandler := handlers.NewUser(filedb.NewUserFileDB("users.db"))
+	userHandler := handlers.NewUser(db.NewUserDB(dbConn))
+	//userHandler := handlers.NewUser(filedb.NewUserFileDB("users.db"))
 
-	e.POST("/user", userHandler.Create)
+	e.POST("/users", userHandler.Create)
+	e.GET("/users/:id", userHandler.GetByID)
 
 	if err := e.Start(":" + port); err != nil {
 		log.Println(err.Error())
