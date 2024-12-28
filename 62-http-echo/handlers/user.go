@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"errors"
+	"fmt"
 	"http-echo-demo/interfaces"
 	"http-echo-demo/models"
 	"log"
@@ -49,8 +50,8 @@ func (u *Userhandler) GetByID(c echo.Context) error {
 	}
 
 	user, err := u.IUser.GetByID(id)
-	println("------>", err.Error())
 	if err != nil {
+		fmt.Println("------>", err.Error(), user)
 		log.Println(err.Error())
 		if strings.Contains(err.Error(), "record not found") {
 			return echo.NewHTTPError(http.StatusNoContent, "record not found")

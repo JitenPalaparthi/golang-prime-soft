@@ -36,3 +36,15 @@ gres
 ```
 docker run -d --name ps-db-ui -p 38080:8080 --network ps-network adminer 
 ```
+
+- To build a docker image
+
+```
+docker build . -t jpalaparthi/primesoft-demo:v0.1
+```
+
+```
+docker run -d --name ps-app1 --network ps-network -e
+ PORT=9093 -e DB_CON="host=demo-pg user=admin password=admin123 dbname=usersdb port=5432 sslmode=disable TimeZone=Asia/Shanghai" -p 9093:9093 jpalaparthi/primesoft-demo:v0.1
+ ```
+ 

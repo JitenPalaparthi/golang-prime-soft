@@ -8,6 +8,8 @@ import (
 	"shapes/shape/square"
 )
 
+//go:generate mockgen -source=shape/shape.go -destination=shape/mocks/mock_ishape.go -package=mocks
+
 func main() {
 	var shapes []shape.IShape
 	shapes = append(shapes, rectangle.New(10.2, 13.5), rectangle.New(14.5, 16.78), square.New(12.4), square.New(123.23))

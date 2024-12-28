@@ -21,7 +21,6 @@ func (u *User) Validate() error {
 	if u.Email == "" {
 		return errors.New("invalid or empty email")
 	}
-
 	return nil
 }
 

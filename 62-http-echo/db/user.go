@@ -1,6 +1,7 @@
 package db
 
 import (
+	"fmt"
 	"http-echo-demo/models"
 
 	"gorm.io/gorm"
@@ -26,7 +27,9 @@ func (u *UserDB) Create(user *models.User) (*models.User, error) {
 func (u *UserDB) GetByID(id string) (*models.User, error) {
 	user := new(models.User)
 	tx := u.DB.First(user, id)
+	fmt.Println("========", user)
 	if tx.Error != nil {
+		fmt.Println("--------------->>>>", tx.Error)
 		return nil, tx.Error
 	}
 	return user, nil

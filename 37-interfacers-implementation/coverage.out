@@ -1,0 +1,5 @@
+mode: set
+shapes/shape/rect/area.go:3.31,5.2 1 0
+shapes/shape/rect/perimeter.go:3.36,5.2 1 0
+shapes/shape/rect/rect.go:6.30,8.2 1 0
+shapes/shape/rect/rect.go:14.30,16.2 1 0
