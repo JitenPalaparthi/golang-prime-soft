@@ -3,6 +3,8 @@ module http-echo-demo
 go 1.23.2
 
 require (
+	github.com/confluentinc/confluent-kafka-go v1.9.2
+	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/labstack/echo/v4 v4.13.3
 	gorm.io/driver/postgres v1.5.11
 	gorm.io/gorm v1.25.12

@@ -48,3 +48,23 @@ docker run -d --name ps-app1 --network ps-network -e
  PORT=9093 -e DB_CON="host=demo-pg user=admin password=admin123 dbname=usersdb port=5432 sslmode=disable TimeZone=Asia/Shanghai" -p 9093:9093 jpalaparthi/primesoft-demo:v0.1
  ```
  
+
+### JWT 
+
+- Header 
+- Payload
+- Signature 
+
+--> Login and Password --> on a successful login --> token 
+--> In the middle war , you pass the token for the authorization
+
+
+Get CPU Profile
+
+curl -o cpu.pprof http://localhost:6060/debug/pprof/profile
+
+build application using go build and generate app.
+
+--> Graphviz
+
+```go tool pprof -svg ./app cpu.pprof > profile.svg```

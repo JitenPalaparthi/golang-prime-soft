@@ -35,3 +35,11 @@ func main() {
 	}
 
 }
+
+// 1 Pt -- 1 C
+// 2 Pt -- 1 C
+// 2 Pt 10 M  -- 2 C
+// 2 Pt -- 3 C (waste of resources)
+// 3 Pt -- 2 C
+// 3 Pt -- 3 C
+// 2 Pt -- 2 C (2 CGs)

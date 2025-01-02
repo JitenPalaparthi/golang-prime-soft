@@ -4,21 +4,61 @@ import (
 	"errors"
 	"fmt"
 	"http-echo-demo/interfaces"
+	"http-echo-demo/messages"
 	"http-echo-demo/models"
 	"log"
 	"net/http"
 	"strings"
 	"time"
 
+	"github.com/golang-jwt/jwt"
+	_ "github.com/golang-jwt/jwt"
 	"github.com/labstack/echo/v4"
 )
 
 type Userhandler struct {
-	IUser interfaces.IUser
+	IUser       interfaces.IUser
+	UserMessage *messages.UserMessage
 }
 
-func NewUser(iUser interfaces.IUser) *Userhandler {
-	return &Userhandler{IUser: iUser}
+func NewUser(iUser interfaces.IUser, userMessage *messages.UserMessage) *Userhandler {
+	return &Userhandler{IUser: iUser, UserMessage: userMessage}
+}
+
+func (u *Userhandler) Login(secretKey string) func(c echo.Context) error {
+	return func(c echo.Context) error {
+		loginUser := new(models.LoginUser)
+		err := c.Bind(loginUser)
+		if err != nil {
+			log.Println(err.Error())
+			return errors.New("something went wrong")
+		}
+
+		err = loginUser.Validate()
+		if err != nil {
+			return err
+		}
+
+		ok, err := u.IUser.Login(loginUser)
+		if err != nil {
+			fmt.Println("---in handler", err.Error())
+			return err
+		}
+
+		if ok {
+			claims := jwt.MapClaims{
+				"email": loginUser.Email,
+				"exp":   time.Now().Add(24 * time.Hour).Unix(), // Token expires in 24 hours
+			}
+
+			token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+			str, _ := token.SignedString([]byte(secretKey))
+			c.String(200, str)
+			return nil
+		}
+		return nil
+	}
+
 }
 
 func (u *Userhandler) Create(c echo.Context) error {
@@ -40,6 +80,7 @@ func (u *Userhandler) Create(c echo.Context) error {
 	if err != nil {
 		return err
 	}
+	u.UserMessage.Value <- user.ToBytes()
 	return c.JSON(http.StatusCreated, user)
 }
 

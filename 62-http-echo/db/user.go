@@ -1,6 +1,7 @@
 package db
 
 import (
+	"errors"
 	"fmt"
 	"http-echo-demo/models"
 
@@ -33,4 +34,20 @@ func (u *UserDB) GetByID(id string) (*models.User, error) {
 		return nil, tx.Error
 	}
 	return user, nil
+}
+
+func (u *UserDB) Login(loginUser *models.LoginUser) (bool, error) {
+	var count int64
+	err := u.DB.Table("users").Where("email = ? and password = ?", loginUser.Email, loginUser.Password).Count(&count).Error
+	fmt.Println(err, count)
+	if err != nil {
+		if err == gorm.ErrRecordNotFound {
+			return false, err
+		}
+	}
+	if count > 0 {
+		return true, nil
+	} else {
+		return false, errors.New("unauthenticarted user")
+	}
 }
